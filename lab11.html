@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button-link {
+        display: inline-block;
+        padding: 30px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      .button-link:hover {
+        background-color: darkgreen;
+      }
+      .button-link:hover {
+        background-color: white;
+        color: black;
+        border: solid green;
+        border-radius: 5px;
+      }
+
+      .styled-list {
+        background-color: yellow;
+        padding: 20px;
+        list-style-type: square;
+      }
+
+      .styled-list li::marker {
+        color: red;
+        margin: 5px;
+      }
+
+      .background {
+        position: relative;
+        height: 200px;
+        z-index: 1;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .background img {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+      }
+      .inline {
+    display: inline;
+    background-color: yellow;
+    border: 2px solid blue;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: yellow;
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+}
+
+.block {
+    display: block;
+    background-color: yellow;
+    border: 1px solid blue;
+    padding: 2pxpx;
+    width: 100px;
+    height: 100px;
+}
+    </style>
+  </head>
+  <body>
+    <a href="#" class="button-link">This is a link</a>
+    <!--  2-->
+    <ul class="styled-list">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+    <!-- 3 -->
+
+    <div class="background">
+      <img src="images.jpeg" alt="Background Image" />
+      <h1>This is a heading</h1>
+      <p>The image has a z- index of -1 ,it will be placed behind the text</p>
+    </div>
+    <!-- display property -->
+    <h1>The display Property</h1>
+    
+    <h2>display: inline</h2>
+    <p >this is text this is text this is text <span class="inline">hello</span> <span class="inline">there</span> this is text this is text this is text</p>
+    
+    <h2>display: inline-block</h2>
+    <p>this is text this is text this is text <span class="inline-block">hello</span> <span class="inline-block">there</span> this is text this is text this is text</p>
+    
+    <h2>display: block</h2>
+    <p>this is text this is text this is text <div class="block">hello</div> <div class="block">there</div> this is text this is text this is text</p>
+
+  </body>
+</html>
